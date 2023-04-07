@@ -1,0 +1,21 @@
+.dialog {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: absolute;
+  gap: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.buttonCloseDialog {
+  margin-left: auto;
+}

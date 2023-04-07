@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: var(--size-main);
+  box-shadow: 0 0 10px var(--color-border-main);
+  gap: var(--size-large);
+  border-bottom: 1px solid lightgray;
+  background-color: var(--color-background);
+}
+
+.themeSwitcher {
+  margin-left: auto;
+}

@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-main);
+  text-align: center;
+  padding: var(--size-main);
+}
+.add {
+  &:hover {
+    background-color: var(--color-button-add);
+  }
+}
+
+.deleteButton {
+  margin-left: auto;
+  cursor: pointer;
+}
+.cardAddButton {
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-button-add);
+  }
+}
+.dialog {
+  width: 20rem;
+  height: fit-content;
+}
+.actions {
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed pink;
+  overflow: hidden;
+  background-size: contain;
+}
+.openUrl {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.buttonDialog {
+  color: black;
+  border: 1px solid black;
+}
+.titleDialog {
+  color: black;
+  font-size: 16px;
+}
+.select {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border-main);
+}
+.input {
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border-main);
+}
+.span {
+  background-color: var(--color-background);
+  font-size: 16px;
+  border-bottom: 1px solid var(--color-border-main);
+}

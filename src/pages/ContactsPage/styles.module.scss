@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: var(--size-main);
+  background: var(--color-mate-mask);
+  height: 360px;
+  backdrop-filter: blur(4px);
+  border-radius: var(--size-main);
+  border: 1px solid var(--color-border-main);
+}

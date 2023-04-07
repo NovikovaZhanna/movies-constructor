@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: var(--size-main);
+  box-shadow: 0 0 10px var(--color-border-main);
+  gap: var(--size-large);
+  border-bottom: 1px solid lightgray;
+  background-color: var(--color-background);
+}
+
+.themeSwitcher {
+  margin-left: auto;
+}
+
+.wrapper {
+  overflow-y: auto;
+  flex-wrap: wrap;
+  padding: var(--size-large);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-main);
+  text-align: center;
+}

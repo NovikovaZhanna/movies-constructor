@@ -1,0 +1,36 @@
+:root[data-theme="dark"] {
+  --color-text-main: #fff;
+  --color-text-inverted: black;
+
+  //background
+  --color-background: #17181ae1;
+
+  //masks
+  --color-mate-mask: rgba(255, 255, 255, 0.192);
+
+  //borders
+  --color-border-main: rgba(255, 255, 255, 0.568);
+
+  //button hover
+  --color-button-delete: rgba(186, 34, 34, 0.321);
+  --color-button-add: rgba(229, 70, 212, 0.321);
+  --color-route-hover: rgba(19, 212, 70, 0.321);
+}
+
+:root[data-theme="light"] {
+  --color-text-main: black;
+  --color-text-inverted: #fff;
+
+  //background
+  --color-background: #c9def384;
+
+  //masks
+  --color-mate-mask: rgba(255, 255, 255, 0.192);
+
+  //borders
+  --color-border-main: rgba(43, 43, 43, 0.568);
+  //button hover
+  --color-button-delete: rgba(186, 34, 34, 0.221);
+  --color-button-add: rgba(101, 198, 84, 0.221);
+  --color-route-hover: rgba(147, 84, 198, 0.221);
+}

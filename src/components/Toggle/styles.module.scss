@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  position: relative;
+}
+.toggle {
+  width: 60px;
+  height: 35px;
+  transform: translate(0%, 0%);
+  input {
+    display: none;
+  }
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 35px;
+    border-radius: 35px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 10%;
+      width: 40px;
+      height: 3px;
+      background: #ffffff2a;
+      border-radius: 100%;
+      opacity: 0.4;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10%;
+      width: 40px;
+      height: 2px;
+      background: #ffffff2a;
+      border-radius: 100%;
+      opacity: 0.3;
+    }
+  }
+  .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #e74a42;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1.4s;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 2px;
+      width: 31px;
+      height: 31px;
+      background-color: #ffffff;
+      border-radius: 31px;
+    }
+    &:before {
+      transition: 0.4s;
+    }
+    &:after {
+      transition: 0.5s;
+    }
+  }
+  input:checked + .slider {
+    background-color: transparent;
+    &:before,
+    &:after {
+      transform: translateX(25px);
+    }
+  }
+  input:checked ~ .wave {
+    display: block;
+    background-color: #898888;
+  }
+}
